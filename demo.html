@@ -20,19 +20,22 @@
         <div id="luxbar-menu" class="luxbar-menu luxbar-menu-dark">
             <ul class="luxbar-navigation">
                 <li class="luxbar-header">
-                    <a class="luxbar-brand">Luxbar Demo</a>
+                    <a class="luxbar-brand">LUXBAR</a>
                     <label id="luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
                 </li>
-                <li class="luxbar-item active"><a>Home</a></li>
-                <li class="luxbar-item"><a>About</a></li>
-                <li class="luxbar-item"><a>Contact</a></li>
+                <li class="luxbar-item"><a href="/luxbar">Home</a></li>
+                <li class="luxbar-item active"><a href="/luxbar/demo">Demo</a></li>
+                <li class="luxbar-item"><a href="/luxbar/faq">FAQ</a></li>
+                <li class="luxbar-item"><a href="#">Download</a></li>
+                <li class="luxbar-item"><a href="https://github.com/balzss/luxbar">Github</a></li>
             </ul>
         </div>
     </div>
 
 
-
-    <i>This is the LUXBAR interactive demo page. Choose the elements below and you will see the result in this page's navbar. To use the choosen style copy and paste the generated HTML code the bottom of the page or <a href="/luxbar">go back to the homepage</a>.</i>
+    <h2>How to use this demo:</h2>
+    <p>Customize the LUXBAR with the options below. The navbar will update accordingly (realtime). After you finished copy and paste the generated HTML code from the bottom of this page to your project.</p>
+    <i>for documentation and download information <a href="/luxbar">visit the homepage</a></i>
 
         <h2 class="variable">luxbar-style-name</h2>
 
@@ -107,7 +110,7 @@
         </div>
 
         <h2 class="variable">luxbar-menu-animation-style</h2>
-                    
+
 
         <div id="luxbar-menu-animation" class="luxbar-menu-dark">
             <ul class="luxbar-navigation luxbar-demo">
@@ -141,13 +144,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</pre>
         </code>
-    </div>
 
+
+
+    </div>
     <footer class="luxbar-menu-dark">
-        created by <a href="#">balzss</a> <br>
-        licensed under the <a href="#">MIT License</a> <br>
-        2017
+        <div class="footnote">
+            created by <a href="#">balzss</a> <br>
+            licensed under the <a href="#">MIT License</a> <br>
+            2017
+        </div>
     </footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -202,7 +210,7 @@ $(function() {
         $temp.remove();
     }
 });
-    
+
     </script>
 </body>
 </html>
