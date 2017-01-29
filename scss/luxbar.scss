@@ -3,6 +3,7 @@ $luxbar-padding: 22px;
 $luxbar-transition: .6s ease;
 $hamburger-line-height: 2px;
 $hamburger-width: 26px;
+$luxbar-shadow: 0 2px 5px rgba(0,0,0,.26);
 
 @import 'themes';
 @import 'hamburger';
@@ -18,6 +19,8 @@ $hamburger-width: 26px;
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: $luxbar-shadow;
+    background-color: inherit;
 }
 
 .luxbar-fixed {
@@ -26,6 +29,18 @@ $hamburger-width: 26px;
     top: 0;
     left: 0;
     z-index: 1000;
+    box-shadow: $luxbar-shadow;
+    background-color: inherit;
+}
+
+.luxbar-fixed-bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: $luxbar-shadow;
+    background-color: inherit;
 }
 
 
@@ -83,27 +98,40 @@ $hamburger-width: 26px;
 /*behavior for screenwidth over or equal to 768*/
 
 @media screen and (min-width: 768px) {
-    .luxbar-hide-hamburger {
 
+    .luxbar-navigation {
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .luxbar-header {
+        margin-right: auto;
+    }
+
+    .luxbar-left-align .luxbar-header {
+        margin-right: unset;
+    }
+
+    .luxbar-hamburger {
+        display: none;
+    }
+
+    .luxbar-menu .luxbar-item:nth-child(2) {
+        border-top: 0px;
+    }
+
+    .luxbar-always-hamburger {
         .luxbar-navigation {
-            flex-flow: row;
-            align-items: center;
+            flex-flow: column;
+            align-items: unset;
         }
 
         .luxbar-header {
-            margin-right: auto;
-        }
-
-        .luxbar-left-align .luxbar-header {
             margin-right: unset;
         }
 
         .luxbar-hamburger {
-            display: none;
-        }
-
-        .luxbar-menu .luxbar-item:nth-child(2) {
-            border-top: 0px;
+            display: unset;
         }
     }
 }
