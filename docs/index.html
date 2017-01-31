@@ -15,6 +15,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 </head>
 <body>
 
@@ -45,29 +48,90 @@
 
     <p>Or download the source directly:</p>
 
-    <div class="luxbar-menu-dark">
-        <ul class="luxbar-navigation luxbar-demo">
-            <li class="luxbar-item luxbar-item-demo luxbar-style-demo"<a>luxbar-0.1.2.zip</a></li>
-            <li class="luxbar-item luxbar-item-demo luxbar-style-demo"<a>luxbar-0.1.2.tar.gz</a></li>
+    <div class="row center-md">
+    <a class="demo-btn col-md-3">luxbar-0.1.2.zip</a>
+    <a class="demo-btn col-md-3">luxbar-0.1.2.tar.gz</a>
+</div>
+
+    <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
+
+    <div class="demo-option-group col-md-12">
+    <h2>Menu builder:</h2>
+
+    <div class="luxbar-demo-need-color luxbar-menu-dark">
+        <ul class="luxbar-navigation">
+            <li class="luxbar-item " ><a>Demo</a></li>
+            <li class="luxbar-item " ><a>Menu</a></li>
+            <li class="luxbar-item " ><a>Builder</a></li>
+            <li class="luxbar-item " ><a><i class="fa fa-plus" aria-hidden="true"></i></a></li>
         </ul>
     </div>
+    </div>
 
-    <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom of the page and drop it in your project.</p>
-
+    <div class="row">
+    <div class="demo-option-group col-md-4">
         <h2>Style:</h2>
 
-        <div id="luxbar-style-name" class="luxbar-menu-dark">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Default</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo active" id="luxbar-static"><a>Static</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-fixed"><a>Fixed</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-fixed-bottom"><a>Fixed Bottom</a></li>
-            </ul>
-        </div>
+        <form action="" class="demo-radiomenu">
+            <input id="default" type="radio" name="radio" >
+            <label class="control" for="default"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Default</label>
+
+            <input id="static" type="radio" name="radio" >
+            <label class="control" for="static"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Static</label>
+
+            <input id="fixed" type="radio" name="radio" >
+            <label class="control" for="fixed"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed</label>
+
+            <input id="fixed-bottom" type="radio" name="radio" >
+            <label class="control" for="fixed-bottom"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed Bottom</label>
+
+        </form>
+    </div>
+
+    <div class="col-md-4">
+    <div class="demo-option-group">
+        <h2>Style:</h2>
+
+        <form action="" class="demo-radiomenu">
+            <input id="default" type="radio" name="radio" >
+            <label class="control" for="default"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Default</label>
+
+            <input id="static" type="radio" name="radio" >
+            <label class="control" for="static"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Static</label>
+
+            <input id="fixed" type="radio" name="radio" >
+            <label class="control" for="fixed"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed</label>
+
+            <input id="fixed-bottom" type="radio" name="radio" >
+            <label class="control" for="fixed-bottom"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed Bottom</label>
+
+        </form>
+    </div>
+    </div>
+    <div class="demo-option-group col-md-4">
+        <h2>Style:</h2>
+
+        <form action="" class="demo-radiomenu">
+            <input id="default" type="radio" name="radio" >
+            <label class="control" for="default"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Default</label>
+
+            <input id="static" type="radio" name="radio" >
+            <label class="control" for="static"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Static</label>
+
+            <input id="fixed" type="radio" name="radio" >
+            <label class="control" for="fixed"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed</label>
+
+            <input id="fixed-bottom" type="radio" name="radio" >
+            <label class="control" for="fixed-bottom"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed Bottom</label>
+
+        </form>
+    </div>
+</div>
+
 
         <h2>Menu alignement:</h2>
 
-        <div id="luxbar-style-name" class="luxbar-menu-dark">
+        <div class="luxbar-demo-need-color luxbar-menu-dark">
             <ul class="luxbar-navigation luxbar-demo">
                 <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Left</a></li>
                 <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Center</a></li>
@@ -79,18 +143,19 @@
 
         <h2>Hamburger visibility:</h2>
 
-        <div id="luxbar-style-name" class="luxbar-menu-dark">
+        <div class="luxbar-demo-need-color luxbar-menu-dark">
             <ul class="luxbar-navigation luxbar-demo">
                 <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Always</a></li>
                 <li class="luxbar-item luxbar-item-demo luxbar-style-demo active" id="luxbar-static"><a>Under 786px</a></li>
                 <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-static"><a>Under 576px</a></li>
+                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-static"><a>Never</a></li>
             </ul>
         </div>
 
 
         <h2>Brand visibility:</h2>
 
-        <div id="luxbar-style-name" class="luxbar-menu-dark">
+        <div class="luxbar-demo-need-color luxbar-menu-dark">
             <ul class="luxbar-navigation luxbar-demo">
                 <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Show</a></li>
                 <li class="luxbar-item luxbar-item-demo luxbar-style-demo active" id="luxbar-static"><a>Hide</a></li>
@@ -99,7 +164,7 @@
 
         <h2>Hamburger animation:</h2>
 
-        <div id="luxbar-menu-animation" class="luxbar-menu-dark">
+        <div class="luxbar-demo-need-color luxbar-menu-dark">
             <ul class="luxbar-navigation luxbar-demo">
                 <li id="luxbar-hamburger-spin" class="luxbar-item luxbar-item-demo luxbar-spin-demo luxbar-animation-demo"><a>
                         <span class="luxbar-hamburger-demo">
@@ -197,7 +262,7 @@
 
 
     </div>
-    <footer class="luxbar-menu-dark">
+    <footer class="luxbar-demo-need-color luxbar-menu-dark">
         <div class="footnote">
             created by <a href="https://github.com/balzss">balzss</a> <br>
             licensed under the <a href="https://github.com/balzss/luxbar/blob/master/LICENSE">MIT License</a> <br>
@@ -216,9 +281,7 @@ $(function() {
     $( ".luxbar-menu-demo" ).click(function() {
         var theme = $(this).attr('class').split(' ')[0];
         $("#luxbar-menu").attr("class", "luxbar-menu " + theme);
-        $("footer").attr("class", theme);
-        $("#luxbar-style-name").attr("class", theme);
-        $("#luxbar-menu-animation").attr("class", theme);
+        $(".luxbar-demo-need-color").attr("class", theme + ' luxbar-demo-need-color');
 
         $(".luxbar-menu-demo").removeClass("active");
         $(this).addClass("active");

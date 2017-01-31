@@ -30,11 +30,11 @@ body {
 
 code pre {
     font-family: 'Droid Sans Mono', monospace;
-    border-left: 4px solid #212121;
+    border-left: 4px solid #37474f;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    background-color: #eee;
-    color: #212121;
+    background-color: #f7f7f7;
+    color: #37474f;
     padding: 10px;
     overflow: auto;
 }
@@ -61,7 +61,8 @@ a {
 }
 
 .luxbar-item-demo {
-    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-basis: 0;
     border-width: 0px !important;
 }
 
@@ -140,4 +141,84 @@ a {
 
 .luxbar-spin-demo:hover span {
     background: transparent;
+}
+
+
+
+
+
+
+
+
+
+.demo-option-group {
+    margin-top: 24px;
+    padding: 24px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.demo-radiomenu {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 72px; */
+}
+
+.control {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* flex-grow: 1; */
+    /* flex-basis: 0; */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 0.2s ease;
+}
+.demo-radiomenu input {
+    display: none;
+}
+
+.demo-checkmark {
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: #e0e0e0;
+  color: #e0e0e0;
+  margin-right: 12px;
+  font-size: 24px;
+  transition: 0.2s ease;
+}
+
+input:checked + .control .demo-checkmark {
+  background: #006064;
+}
+
+.control:hover {
+  /* background-color: #e0e0e0; */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+input:checked + .control {
+  background-color: #00838F;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color: #fff;
+}
+
+.demo-btn:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.demo-btn {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+  transition: 0.2s ease;
+  margin-right: 24px;
+}
+
+.demo-btn-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
