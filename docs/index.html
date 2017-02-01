@@ -1,247 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Luxbar Demo - Featherweight, Responsive, CSS Only Navigation bar</title>
-    <link rel="stylesheet" href="style.css?v=0.1">
-    <link rel="stylesheet" href="/css/luxbar.css?v=0.1">
+    <head>
+        <meta charset="UTF-8">
+        <title>Luxbar Demo - Featherweight, Responsive, CSS Only Navigation bar</title>
+        <link rel="stylesheet" href="style.css?v=0.1">
+        <link rel="stylesheet" href="radiothemes.css?v=0.1">
+        <link rel="stylesheet" href="/css/luxbar.css?v=0.1">
 
-    <link rel="icon" type="image/png" sizes="128x128" href="favicon-128.png">
+        <link rel="icon" type="image/png" sizes="128x128" href="favicon-128.png">
 
-    <meta name="description" content="Luxbar - Featherweight, Responsive, CSS Only Navigation bar">
-    <meta name="keywords" content="Luxbar, llightweight, CSS, CSS-only, CSS only, navbar, responsive, navigation bar">
-    <meta name="author" content="balzss">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Luxbar - Featherweight, Responsive, CSS Only Navigation bar">
+        <meta name="keywords" content="Luxbar, llightweight, CSS, CSS-only, CSS only, navbar, responsive, navigation bar">
+        <meta name="author" content="balzss">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-</head>
-<body>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    </head>
+        <body>
 
-<div class="container container-padding-top">
-    <header id="luxbar" class="luxbar luxbar-fixed">
-        <input type="checkbox" id="luxbar-checkbox">
-        <div id="luxbar-menu" class="luxbar-menu luxbar-menu-dark">
-            <ul class="luxbar-navigation">
-                <li class="luxbar-header">
-                    <a href="/luxbar" class="luxbar-brand">LUXBAR</a>
-                    <label id="luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
-                </li>
-                <li class="luxbar-item active"><a href="/luxbar">Home</a></li>
-                <li class="luxbar-item"><a href="/luxbar/faq">Docs</a></li>
-                <li class="luxbar-item"><a href="/luxbar/faq">FAQ</a></li>
-                <li class="luxbar-item"><a href="https://github.com/balzss/luxbar">Github</a></li>
-            </ul>
-        </div>
-    </header>
-
-
-    <h1>Getting started:</h1>
-    <p>Download the package via bower:</p>
-    <code><pre>bower install luxbar</pre></code>
-
-    <p>Or use the CDN:</p>
-    <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt; </pre></code>
-
-    <p>Or download the source directly:</p>
-
-    <div class="row center-md">
-    <a class="demo-btn col-md-3">luxbar-0.1.2.zip</a>
-    <a class="demo-btn col-md-3">luxbar-0.1.2.tar.gz</a>
-</div>
-
-    <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
-
-    <div class="demo-option-group col-md-12">
-    <h2>Menu builder:</h2>
-
-    <div class="luxbar-demo-need-color luxbar-menu-dark">
-        <ul class="luxbar-navigation">
-            <li class="luxbar-item " ><a>Demo</a></li>
-            <li class="luxbar-item " ><a>Menu</a></li>
-            <li class="luxbar-item " ><a>Builder</a></li>
-            <li class="luxbar-item " ><a><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-        </ul>
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="demo-option-group col-md-4">
-        <h2>Style:</h2>
-
-        <form action="" class="demo-radiomenu">
-            <input id="default" type="radio" name="radio" >
-            <label class="control" for="default"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Default</label>
-
-            <input id="static" type="radio" name="radio" >
-            <label class="control" for="static"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Static</label>
-
-            <input id="fixed" type="radio" name="radio" >
-            <label class="control" for="fixed"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed</label>
-
-            <input id="fixed-bottom" type="radio" name="radio" >
-            <label class="control" for="fixed-bottom"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed Bottom</label>
-
-        </form>
-    </div>
-
-    <div class="col-md-4">
-    <div class="demo-option-group">
-        <h2>Style:</h2>
-
-        <form action="" class="demo-radiomenu">
-            <input id="default" type="radio" name="radio" >
-            <label class="control" for="default"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Default</label>
-
-            <input id="static" type="radio" name="radio" >
-            <label class="control" for="static"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Static</label>
-
-            <input id="fixed" type="radio" name="radio" >
-            <label class="control" for="fixed"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed</label>
-
-            <input id="fixed-bottom" type="radio" name="radio" >
-            <label class="control" for="fixed-bottom"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed Bottom</label>
-
-        </form>
-    </div>
-    </div>
-    <div class="demo-option-group col-md-4">
-        <h2>Style:</h2>
-
-        <form action="" class="demo-radiomenu">
-            <input id="default" type="radio" name="radio" >
-            <label class="control" for="default"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Default</label>
-
-            <input id="static" type="radio" name="radio" >
-            <label class="control" for="static"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Static</label>
-
-            <input id="fixed" type="radio" name="radio" >
-            <label class="control" for="fixed"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed</label>
-
-            <input id="fixed-bottom" type="radio" name="radio" >
-            <label class="control" for="fixed-bottom"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed Bottom</label>
-
-        </form>
-    </div>
-</div>
+            <div class="container container-padding-top">
+                <header id="luxbar" class="luxbar luxbar-fixed">
+                    <input type="checkbox" id="luxbar-checkbox">
+                    <div id="luxbar-menu" class="luxbar-menu luxbar-menu-dark">
+                        <ul class="luxbar-navigation">
+                            <li class="luxbar-header">
+                                <a href="/luxbar" class="luxbar-brand">LUXBAR</a>
+                                <label id="luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
+                            </li>
+                            <li class="luxbar-item active"><a href="/luxbar">Home</a></li>
+                            <li class="luxbar-item"><a href="/luxbar/faq">Docs</a></li>
+                            <li class="luxbar-item"><a href="/luxbar/faq">FAQ</a></li>
+                            <li class="luxbar-item"><a href="https://github.com/balzss/luxbar">Github</a></li>
+                        </ul>
+                    </div>
+                </header>
 
 
-        <h2>Menu alignement:</h2>
+                <h1>Getting started:</h1>
+                <p>Download the package via bower:</p>
+                <code><pre>bower install luxbar</pre></code>
 
-        <div class="luxbar-demo-need-color luxbar-menu-dark">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Left</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Center</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Justify</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo active" id="luxbar-static"><a>Right</a></li>
-            </ul>
-        </div>
+                    <p>Or use the CDN:</p>
+                    <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt; </pre></code>
 
+                        <p>Or download the source directly:</p>
 
-        <h2>Hamburger visibility:</h2>
+                        <div class="row center-md center-sm demo-btn-holder">
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.zip</a>
+                            <a class="demo-btn col-md-3 col-sm-3 col-xs-12">luxbar-0.1.2.tar.gz</a>
+                        </div>
 
-        <div class="luxbar-demo-need-color luxbar-menu-dark">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Always</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo active" id="luxbar-static"><a>Under 786px</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-static"><a>Under 576px</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-static"><a>Never</a></li>
-            </ul>
-        </div>
+                        <p>Then customize the look of it (color, menu alignement, etc) with the options below. The navbar will update realtime accordingly. After everything looks the way you want, grab the generated HTML code from the bottom and drop it into your project.</p>
 
+                        <div class="demo-option-group col-md-12">
+                            <h2>Menu builder:</h2>
 
-        <h2>Brand visibility:</h2>
+                            <div class="luxbar-demo-need-color luxbar-menu-dark">
+                                <ul class="luxbar-navigation">
+                                    <li class="luxbar-item " ><a>Demo</a></li>
+                                    <li class="luxbar-item " ><a>Menu</a></li>
+                                    <li class="luxbar-item " ><a>Builder</a></li>
+                                    <li class="luxbar-item " ><a><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-        <div class="luxbar-demo-need-color luxbar-menu-dark">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo" id="luxbar-default"><a>Show</a></li>
-                <li class="luxbar-item luxbar-item-demo luxbar-style-demo active" id="luxbar-static"><a>Hide</a></li>
-            </ul>
-        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12 col-xs-12">
 
-        <h2>Hamburger animation:</h2>
+                                <div class="demo-option-group">
+                                    <h2>Navbar style:</h2>
 
-        <div class="luxbar-demo-need-color luxbar-menu-dark">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li id="luxbar-hamburger-spin" class="luxbar-item luxbar-item-demo luxbar-spin-demo luxbar-animation-demo"><a>
-                        <span class="luxbar-hamburger-demo">
-                            Spin<span></span>
-                        </span></a></li>
-                <li id="luxbar-hamburger-doublespin" class="luxbar-item luxbar-item-demo luxbar-doublespin-demo active luxbar-animation-demo"><a>
-                        <span class="luxbar-hamburger-demo">
-                            Doublespin<span></span>
-                        </span></a></li>
-            </ul>
-        </div>
+                                    <form action="" class="demo-radiomenu">
+                                        <input id="default" type="radio" name="radio" >
+                                        <label class="control" for="default"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Default <i class="fa fa-question-circle" aria-hidden="true"></i> </label>
 
-        <h2>Colorscheme:</h2>
-        <div class="luxbar-menu-dark luxbar-menu-demo active">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Dark</a></li>
-            </ul>
-        </div>
+                                        <input id="static" type="radio" name="radio" >
+                                        <label class="control" for="static"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Static<i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
-        <div class="luxbar-menu-light luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Light</a></li>
-            </ul>
-        </div>
+                                        <input id="fixed" type="radio" name="radio" checked>
+                                        <label class="control" for="fixed"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed<i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
-        <div class="luxbar-menu-transparent luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Transparent</a></li>
-            </ul>
-        </div>
+                                        <input id="fixed-bottom" type="radio" name="radio" >
+                                        <label class="control" for="fixed-bottom"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Fixed Bottom<i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
-        <div class="luxbar-menu-material-red luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Red</a></li>
-            </ul>
-        </div>
-
-        <div class="luxbar-menu-material-indigo luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Indigo</a></li>
-            </ul>
-        </div>
-
-        <div class="luxbar-menu-material-cyan luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Cyan</a></li>
-            </ul>
-        </div>
-
-        <div class="luxbar-menu-material-green luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Green</a></li>
-            </ul>
-        </div>
-
-        <div class="luxbar-menu-material-amber luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Amber</a></li>
-            </ul>
-        </div>
-
-        <div class="luxbar-menu-material-brown luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Brown</a></li>
-            </ul>
-        </div>
-
-        <div class="luxbar-menu-material-bluegrey luxbar-menu-demo">
-            <ul class="luxbar-navigation luxbar-demo">
-                <li class="luxbar-item luxbar-item-demo"><a class="luxbar-theme-text">Material Blue Grey</a></li>
-            </ul>
-        </div>
+                                    </form>
 
 
-        <h1>Generated HTML code:</h1>
-        <code>
-            <pre>
+                                    <h2>Menu alignement:</h2>
+
+                                    <form action="" class="demo-radiomenu">
+                                        <input id="radio-leftmenu" type="radio" name="radio" >
+                                        <label class="control" for="radio-leftmenu"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Left<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-centermenu" type="radio" name="radio" >
+                                        <label class="control" for="radio-centermenu"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Center<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-justify" type="radio" name="radio" >
+                                        <label class="control" for="radio-justify"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Justify<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-right" type="radio" name="radio" checked>
+                                        <label class="control" for="radio-right"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Right<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                    </form>
+
+                                    <h2>Hamburger visibility:</h2>
+
+                                    <form action="" class="demo-radiomenu">
+                                        <input id="radio-always" type="radio" name="radio" >
+                                        <label class="control" for="radio-always"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Always<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-786" type="radio" name="radio" checked>
+                                        <label class="control" for="radio-786"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Under 786px<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-576" type="radio" name="radio" >
+                                        <label class="control" for="radio-576"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Under 576px<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-never" type="radio" name="radio" >
+                                        <label class="control" for="radio-never"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Never<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                    </form>
+
+                                    <h2>Brand visibility:</h2>
+
+                                    <form action="" class="demo-radiomenu">
+                                        <input id="radio-brand-show" type="radio" name="radio" checked>
+                                        <label class="control" for="radio-brand-show"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Show brand<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-hide-brand" type="radio" name="radio" >
+                                        <label class="control" for="radio-hide-brand"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Hide brand<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                                    </form>
+
+                                    <h2>Hamburger animation:</h2>
+
+                                    <form action="" class="demo-radiomenu">
+                                        <input id="radio-spin" type="radio" name="radio" >
+                                        <label class="control" for="radio-spin"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Spin<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radio-doublespin" type="radio" name="radio" checked>
+                                        <label class="control" for="radio-doublespin"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Doublespin<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <div class="demo-option-group">
+                                    <h2>Default themes:</h2>
+
+                                    <form action="" class="demo-radiomenu">
+                                        <input id="radiotheme-dark" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-dark" for="radiotheme-dark"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Dark<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-light" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-light" for="radiotheme-light"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Light<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+
+
+                                        <div class="h2-padding">
+                                            <h2>Material Dark Themes:</h2>
+                                        </div>
+
+                                        <input id="radiotheme-red-900" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-red-900" for="radiotheme-red-900"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material red 900<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-indigo-900" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-indigo-900" for="radiotheme-indigo-900"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material indigo 900<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-cyan-900" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-cyan-900" for="radiotheme-cyan-900"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material cyan 900<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-green-900" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-green-900" for="radiotheme-green-900"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material green 900<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-amber-900" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-amber-900" for="radiotheme-amber-900"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material amber 900<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-brown-900" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-brown-900" for="radiotheme-brown-900"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material brown 900<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-bluegrey-900" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-bluegrey-900" for="radiotheme-bluegrey-900"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material blue grey 900<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+
+                                        <div class="h2-padding">
+                                            <h2>Material light themes:</h2>
+                                        </div>
+
+                                        <input id="radiotheme-red-500" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-red-500" for="radiotheme-red-500"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material red 500<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-indigo-500" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-indigo-500" for="radiotheme-indigo-500"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material indigo 500<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-cyan-500" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-cyan-500" for="radiotheme-cyan-500"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material cyan 500<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-green-500" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-green-500" for="radiotheme-green-500"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material green 500<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-brown-500" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-brown-500" for="radiotheme-brown-500"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material brown 500<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                        <input id="radiotheme-bluegrey-500" type="radio" name="radio" >
+                                        <label class="radiotheme radiotheme-bluegrey-500" for="radiotheme-bluegrey-500"><span class="demo-checkmark"><i class="fa fa-check" aria-hidden="true"></i></span>Material blue grey 500<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+
+                                    </form>
+                                    <i>more themes are coming soon...</i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1>Generated HTML code:</h1>
+                        <code>
+                            <pre>
 &lt;div class=&quot;luxbar <span class="variable" id="luxbar-style-name-code">luxbar-static</span>&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;luxbar-checkbox&quot;&gt;
     &lt;div class=&quot;luxbar-menu <span class="variable" id="luxbar-colorscheme-code">luxbar-menu-dark</span>&quot;&gt;
@@ -257,26 +234,26 @@
         &lt;/ul&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
-        </code>
+                        </code>
 
 
 
-    </div>
-    <footer class="luxbar-demo-need-color luxbar-menu-dark">
-        <div class="footnote">
-            created by <a href="https://github.com/balzss">balzss</a> <br>
-            licensed under the <a href="https://github.com/balzss/luxbar/blob/master/LICENSE">MIT License</a> <br>
-            2017
-        </div>
-    </footer>
+            </div>
+            <footer class="luxbar-demo-need-color luxbar-menu-dark">
+                <div class="footnote">
+                    created by <a href="https://github.com/balzss">balzss</a> <br>
+                    licensed under the <a href="https://github.com/balzss/luxbar/blob/master/LICENSE">MIT License</a> <br>
+                    2017
+                </div>
+            </footer>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+                    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                    crossorigin="anonymous"></script>
 
-    <script>
+            <script>
 $(function() {
     $( ".luxbar-menu-demo" ).click(function() {
         var theme = $(this).attr('class').split(' ')[0];
@@ -323,7 +300,7 @@ $(function() {
     }
 });
 
-    </script>
-</body>
+            </script>
+        </body>
 </html>
 
