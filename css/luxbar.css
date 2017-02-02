@@ -112,7 +112,7 @@
 
 /*general hamburger specs*/
 .luxbar-hamburger {
-  padding: 22px;
+  padding: 18px;
   position: relative;
   cursor: pointer; }
   .luxbar-hamburger span::before {
@@ -185,17 +185,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px; }
+  height: 58px; }
 
 .luxbar-left-align .luxbar-navigation, .luxbar-left-align .luxbar-header {
   justify-content: flex-start; }
 
 .luxbar-brand {
   font-size: 1.6em;
-  padding: 22px; }
+  padding: 18px; }
 
 .luxbar-menu {
-  height: 64px;
+  height: 58px;
   overflow: hidden;
   transition: 0.6s ease; }
 
@@ -214,9 +214,9 @@
   cursor: pointer; }
 
 .luxbar-item {
-  padding: 22px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
   height: 100%;
   display: block; }
 

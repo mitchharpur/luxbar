@@ -24,28 +24,28 @@
 
             <div class="container container-padding-top">
                 <header id="luxbar" class="luxbar luxbar-fixed">
-                    <input type="checkbox" id="luxbar-checkbox">
-                    <div id="luxbar-menu" class="luxbar-menu luxbar-menu-dark">
-                        <ul class="luxbar-navigation">
-                            <li class="luxbar-header">
-                                <a href="/luxbar" class="luxbar-brand">LUXBAR</a>
-                                <label id="luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
-                            </li>
-                            <li class="luxbar-item active"><a href="/luxbar">Home</a></li>
-                            <li class="luxbar-item"><a href="/luxbar/faq">Docs</a></li>
-                            <li class="luxbar-item"><a href="/luxbar/faq">FAQ</a></li>
-                            <li class="luxbar-item"><a href="https://github.com/balzss/luxbar">Github</a></li>
-                        </ul>
-                    </div>
+                        <input type="checkbox" id="luxbar-checkbox">
+                        <div id="luxbar-menu" class="luxbar-menu luxbar-menu-dark">
+                            <ul class="luxbar-navigation">
+                                <li class="luxbar-header">
+                                    <a href="/luxbar" class="luxbar-brand">LUXBAR</a>
+                                    <label id="luxbar-hamburger" class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
+                                </li>
+                                <li class="luxbar-item active"><a href="/luxbar">Home</a></li>
+                                <li class="luxbar-item"><a href="/luxbar/faq">Docs</a></li>
+                                <li class="luxbar-item"><a href="/luxbar/faq">FAQ</a></li>
+                                <li class="luxbar-item"><a href="https://github.com/balzss/luxbar">Github</a></li>
+                            </ul>
+                        </div>
                 </header>
 
 
                 <h1>Getting started:</h1>
                 <p>Download the package via bower:</p>
-                <code><pre>bower install luxbar</pre></code>
+                <code><pre>bower install luxbar<div class="copy-btn">COPY</div></pre></code>
 
                     <p>Or use the CDN:</p>
-                    <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt; </pre></code>
+                    <code><pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/luxbar/0.1.0/luxbar.css&quot;&gt; <div class="copy-btn">COPY</div></pre> </code>
 
                         <p>Or download the source directly:</p>
 
@@ -233,7 +233,7 @@
             &lt;li class=&quot;luxbar-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;<div class="copy-btn">COPY</div></pre>
                         </code>
 
 
@@ -246,61 +246,6 @@
                     2017
                 </div>
             </footer>
-
-
-
-            <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-                    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-                    crossorigin="anonymous"></script>
-
-            <script>
-$(function() {
-    $( ".luxbar-menu-demo" ).click(function() {
-        var theme = $(this).attr('class').split(' ')[0];
-        $("#luxbar-menu").attr("class", "luxbar-menu " + theme);
-        $(".luxbar-demo-need-color").attr("class", theme + ' luxbar-demo-need-color');
-
-        $(".luxbar-menu-demo").removeClass("active");
-        $(this).addClass("active");
-
-        $("#luxbar-colorscheme-code").text(theme);
-    });
-
-    $( ".luxbar-style-demo" ).click(function() {
-        var style = $(this).attr('id');
-        $("#luxbar").attr("class", "luxbar " + style);
-        if(style === "luxbar-default") {
-            $(".container").removeClass("container-padding-top");
-        } else {
-            $(".container").addClass("container-padding-top");
-        }
-        $(".luxbar-style-demo").removeClass("active");
-        $(this).addClass("active");
-
-        $("#luxbar-style-name-code").text(style);
-    });
-
-    $( ".luxbar-animation-demo" ).click(function() {
-        var animation = $(this).attr('id');
-        console.log(animation);
-        $("#luxbar-hamburger").attr("class", "luxbar-hamburger " + animation);
-        $(".luxbar-animation-demo").removeClass("active");
-        $(this).addClass("active");
-
-        $("#luxbar-hamburger-animation-code").text(animation);
-    });
-
-
-    function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-    }
-});
-
-            </script>
         </body>
 </html>
 

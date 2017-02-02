@@ -11,7 +11,6 @@ h2 {
 }
 
 .container {
-    background-color: white;
     max-width: 960px;
     /* margin: auto; */
     padding: 12px;
@@ -34,13 +33,34 @@ h2 {
 
 code pre {
     font-family: 'Droid Sans Mono', monospace;
-    border-left: 4px solid #37474f;
+    border-left: 4px solid #424242;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    background-color: #f7f7f7;
-    color: #37474f;
+    background-color: #f5f5f5;
+    color: #424242;
     padding: 10px;
     overflow: auto;
+    position: relative;
+}
+
+code pre:hover .copy-btn {
+    border-color: #424242;
+    color: #424242;
+    background-color: inherit;
+}
+
+.copy-btn {
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 4px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s ease;
 }
 
 .listing > li {
@@ -189,8 +209,8 @@ form {
     padding: 4px;
     padding-left: 8px;
     padding-right: 8px;
-    background: #e0e0e0;
-    color: #e0e0e0;
+    background: #f5f5f5;
+    color: #f5f5f5;
     margin-right: 12px;
     font-size: 24px;
     transition: 0.2s ease;
@@ -218,7 +238,7 @@ input:checked + .control .demo-checkmark {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .control:hover .fa-question-circle {
-    color: #e0e0e0;
+    color: #bdbdbd;
 }
 input:checked + .control {
     background-color: #00838F;
